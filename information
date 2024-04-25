@@ -1,0 +1,23 @@
+# * - symbolizes dor product
+# P(y = 1 | x; w) = sigma(w*x)  DOT PRODUCT
+# P(y = -1 | x; w) = 1-sigma(w*x) = sigma(-w*x)
+# P(y | x; w) = sigma(yw*x)
+
+# stochastic gradient descent w step in data point (xn) with step size (a) and data label (yn)
+# w <- w + alpha(1 - P(y(n) | x(n); w) * (y(n) * x(n))
+
+"""
+README
+
+Predict whether income exceeds $50K/yr based on census data. Also known as "Census Income" dataset.
+
+First column is class label, remaining columns are a sparse representation
+of the feature vector in format <feature>:<value>.  All other features are 0.
+
+more information on the task:
+http://archive.ics.uci.edu/ml/datasets/Adult
+
+preprocessed version from:
+http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html
+
+"""
